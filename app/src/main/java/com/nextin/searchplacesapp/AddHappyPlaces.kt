@@ -2,10 +2,22 @@ package com.nextin.searchplacesapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.nextin.searchplacesapp.databinding.ActivityAddHappyPlacesBinding
 
 class AddHappyPlaces : AppCompatActivity() {
+    private var binding:ActivityAddHappyPlacesBinding? =null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_happy_places)
+        binding = ActivityAddHappyPlacesBinding.inflate(layoutInflater)
+        setContentView(binding?.root)
+
+        setSupportActionBar(binding?.addPlacesToolBar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        binding?.addPlacesToolBar?.setNavigationOnClickListener{
+            onBackPressed()
+        }
+
+
     }
 }

@@ -27,7 +27,7 @@
         >
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:padding="@dimen/main_content_padding">
 
             <com.google.android.material.textfield.TextInputLayout
@@ -44,6 +44,7 @@
                     android:id="@+id/et_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:minHeight="48dp"
                     android:hint="@string/edit_text_hint_title"
                     android:inputType="textCapWords"
                     android:textColor="@color/primary_text_color"
@@ -65,6 +66,7 @@
                     android:id="@+id/et_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:minHeight="48dp"
                     android:hint="@string/edit_text_hint_description"
                     android:inputType="textCapSentences"
                     android:textColor="@color/primary_text_color"
@@ -86,6 +88,7 @@
                     android:id="@+id/et_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:minHeight="48dp"
                     android:hint="@string/edit_text_hint_date"
                     android:inputType="text"
                     android:textColor="@color/primary_text_color"
@@ -107,6 +110,7 @@
                     android:id="@+id/et_location"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:minHeight="48dp"
                     android:hint="@string/edit_text_hint_location"
                     android:inputType="text"
                     android:textColor="@color/primary_text_color"
